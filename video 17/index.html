@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .red{
+            background-color: aqua;
+        }
+
+        /* Id Selector */
+        #blue {
+            background-color: blue;
+        }
+        
+        /* Child Selectors (DIRECTLY DIV ER UNDER ER THKTE HOBE)*/ 
+        div > p {
+            color: aquamarine;
+            background-color: blanchedalmond;
+        }
+
+        /* Decendent Selector (DIV ER UNDER ER THKLEI HOBE JODI DIV ER BHETOR A ONNO KONO TAG THKE TAR UNDER A P THKE TAHOLEI HOBE) */
+          div p {
+            color: blue;
+            background-color: aqua;
+          } 
+
+          /* Universal Selector */
+          *{
+            margin: 0;
+            padding: 0;
+          }
+          
+         /* Pseudo Selector */
+a:visited{
+    color: yellowgreen;
+}
+
+a:link{
+    color: brown;
+}
+
+a:active{
+    background-color: blue;
+}
+
+a:hover{
+    background-color: lightblue;
+}
+
+p:first-child{
+    background-color: blueviolet;
+}
+    </style>
+</head>
+<body>
+
+    <main class="one">
+<p>I am one</p>
+<p>I am second</p>
+    </main>
+
+    <div class="red">
+        I am a div 
+    </div>
+
+    <div>
+        I am another div
+    </div>
+    
+    <div id="blue">
+        I Am also div
+    </div>
+    
+    <div> <article>
+        <p>I am child of first div</p></article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a> <br>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+    
+</body>
+</html>

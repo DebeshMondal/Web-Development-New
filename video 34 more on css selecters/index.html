@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors 2.O</title>
+    <style>
+/* .box:first-child{
+    background-color: aqua;
+}
+.box::first-line{
+    color: brown;
+} */
+/* 
+.boxes *{
+    color: blue;
+    border: 2px solid black;
+}
+ p,a,.box,[data-color="primary"]{
+   padding-top: 45px;
+} */
+
+/* .box:nth-child(even){
+    background-color: blue;
+} */
+/* .box:nth-last-child(1){
+    background-color: brown;
+} */
+
+.boxes::before{
+    content: "MEOWWW";
+    color: coral;
+}
+.boxes::after{
+    content: "BHUUUU!";
+    color: chartreuse;
+}
+
+::selection{
+    color: aqua;
+    background-color: aquamarine;
+}
+.box::first-letter{
+    color: blue;
+    font-size: 12px;
+}
+
+input::placeholder{
+    color: blueviolet;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="type ">
+    </div>  
+</body>
+</html>

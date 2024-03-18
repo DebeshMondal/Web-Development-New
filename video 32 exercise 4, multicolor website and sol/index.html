@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css multicolor website</title>
+    <style>
+        /* :root{
+            --primary-color:rgba(14, 167, 233, 0.992);
+            --text-color:rgb(239, 16, 16);
+            --secondary-color:rgb(88, 206, 230);
+        } */
+        :root{
+            --primary-color:rgba(128, 183, 69, 0.992);
+            --text-color:rgb(16, 42, 239);
+            --secondary-color:rgba(78, 215, 48, 0.871);
+        }
+        body{
+            background-color: var(--primary-color);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+          font-family: fantasy;
+        }
+        nav{
+            background-color: var(--secondary-color);
+            padding: 12px 0px ;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 15px;
+            font-weight: 100;
+           
+        }
+       ul li a{
+        color: var(--text-color);
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Create a multicolor website which can change color using css variables -->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Contact</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
